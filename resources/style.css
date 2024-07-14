@@ -1,0 +1,336 @@
+/* Universal Styles */
+
+html{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  
+  .center{
+    text-align: center;
+  }
+  
+  .button{
+    border-radius: 20px;
+    background-color: deeppink;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  
+  .image-container{
+    overflow: hidden;
+  }
+  
+  .image-container img{
+    max-width: 100%;
+    display: block;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .main{
+      top: 2.5625rem;
+    }
+  }
+
+/* Header */
+
+header{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+header .content{
+    height: 7rem;
+    display: flex;
+    align-items: center;
+}
+
+header .logo{
+    height: 7rem;
+    margin-left: 5%;
+}
+
+header nav{
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+}
+
+nav a{
+    padding-left: 2rem;
+    font-size: 1.5rem;
+}
+
+nav .button{
+    padding: .4rem 1rem;
+    margin-left: 2rem;
+}
+
+header .mobile{
+  display: none;
+}
+
+.button a{
+  color: aliceblue;
+  text-decoration: none;
+}
+
+header a{
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+  header .desktop{
+    display: none;
+  }
+
+  header .mobile{
+    display: block;
+  }
+}
+
+/* Banner */
+
+#banner{
+  min-height: 57rem;
+  background-image: url("./images/Banner.png");
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#quote{
+  left: 10rem;
+  padding: 2.5rem 5rem 2.5rem 5rem;
+  border-radius: 4px;
+  background-color: transparent;
+  opacity: 1;
+}
+
+#quote .content{
+  width: 25.625rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.4;
+  color: deeppink;
+}
+
+#quote .striking{
+  font-size: 3.125rem;
+  padding-bottom: 1rem;
+  line-height: 1;
+}
+
+#quote span{
+  font-size: 1.4rem;
+}
+
+#quote span strong{
+  font-weight: bold;
+}
+
+#quote .button{
+  margin-top: 1.625rem;
+  padding: 1.25rem 6rem;
+  background-color: deeppink;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1300px){
+  #banner{
+    background-image: url(./images/Banner2.png);
+    justify-content: center;
+  }
+}
+
+/* Products */
+
+#products{
+  max-width: 62.5rem;
+  margin: 0 auto;
+  padding: 7.5rem 1.25rem 0 1.25rem;
+}
+
+#products h2{
+  padding-left: 1.25rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+#products h3{
+  padding-left: 1.25rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+#products a{
+  text-decoration: none;
+  color: deeppink;
+}
+
+#products .images-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#products .image-container{
+  width: 20rem;
+  min-height: 20rem;
+  background-position: center;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+/* About Us */
+
+#about-us{
+  max-width: 62.5rem;
+  margin: 0 auto;
+  padding: 7.5rem 1.25rem 0 1.25rem;
+}
+
+#about-us h2{
+  padding-left: 1.25rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+#about-us .biography{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-us .container{
+  width: 60rem;
+  min-height: 46rem;
+  background-image: url("./images/Zocalo.png");
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about-us .description{
+  background-color: rgba(255, 20, 147, 0.70);
+  color: aliceblue;
+  width: 100%;
+  margin: 0;
+  padding: 1.875rem;
+}
+
+#about-us h3{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+#about-us p{
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#about-us strong{
+  font-weight: bold;
+}
+
+#about-us em{
+  font-style: italic;
+}
+
+/* Contact */
+
+#contacts{
+  max-width: 62.5rem;
+  margin: 0 auto;
+  padding: 6.25rem 1.25rem 6.25rem 1.25rem;
+}
+
+#contacts .container{
+  width: 60rem;
+  min-height: 32rem;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#contacts .content{
+  padding: 0 2.5rem 0 1.25rem;
+  width: 40%;
+  margin: 1.25rem 0;
+  flex-grow: 1;
+}
+
+#contacts h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+#contacts p{
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#contacts a{
+  text-decoration: none;
+  color: deeppink;
+}
+
+#contacts .map{
+  width: 40%;
+  height: auto;
+  flex-grow: 2;
+}
+
+@media only screen and (max-width: 1080px) {
+  #contacts .map{
+    display: none;
+  }
+
+  #contacts{
+    padding: 0 1.25rem;
+  }
+
+  #contacts .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+
+  #contacts .content{
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+/* Footer */
+
+footer{
+  padding: 0.5rem 2rem;
+  background-color: deeppink;
+}
+
+footer p{
+  font-size: 1rem;
+  text-align: center;
+  color: aliceblue;
+  margin: 1rem 0;
+}
